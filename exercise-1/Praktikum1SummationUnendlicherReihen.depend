@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1507138655 source:c:\users\tstep\google drive\ai fh swf iserlohn\module\semester 1\programmieren mit c++ 1\tobi\praktikum1\praktikum1summationunendlicherreihen\main.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+
+1507129918 source:c:\users\tstep\desktop\praktikum1summationunendlicherreihen\main.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+
+1507381774 source:c:\users\tstep\google drive\ai fh swf iserlohn\module\semester 1\programmieren mit c++ 1\tobi\praktikum1\main.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+

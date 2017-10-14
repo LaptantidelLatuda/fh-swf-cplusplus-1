@@ -1,0 +1,87 @@
+/*=========================================================
+
+  Filename: main.cpp
+
+  Author: Tobias Steppan
+
+  Date: 30.09.2017
+
+  Description: "Aufgabe: Summation unendlicher Reihen"
+
+==========================================================*/
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+double HarmonischeReiheSumme1000Summanden()
+{
+    /*  description:    Errechnet die ersten 1000 Summanden der Harmonischen Reihe
+        parameters:     n/a
+        return value:   Ergebnis auf fünf Nachkommastellen gerundet (konvergiert gegen unendlich)
+    */
+    double result=0.0;
+    for(int i = 1; i<=1000; i++)
+    {
+        result += 1.0/i;
+    }
+    return result;
+}
+
+double AlternierendeHarmonischeReiheSumme1000Summanden()
+{
+    /*  description:    Errechnet die ersten 1000 Summanden der Alternierenden Harmonischen Reihe
+        parameters:     n/a
+        return value:   Ergebnis auf fünf Nachkommastellen gerundet (konvergiert gegen ln(2) = 0,6931471806
+    */
+    double result;
+    return result;
+}
+
+double LeibnizscheReiheSumme1000Summanden()
+{
+    /*  description:    Errechnet die ersten 1000 Summanden der Leibnizschen Reihe
+        parameters:     n/a
+        return value:   Ergebnis auf fünf Nachkommastellen gerundet (konvergiert gegen pi/4 = 0,7853961634
+    */
+    double result;
+    return result;
+}
+
+double GeometrischeReiheSumme1000Summanden()
+{
+    /*  description:    Errechnet die ersten 1000 Summanden der Geometrischen Reihe
+        parameters:     n/a
+        return value:   Ergebnis auf fünf Nachkommastellen gerundet (konvergiert gegen 2)
+    */
+    double result;
+    return result;
+}
+
+int main()
+{
+/*  description:    c++ main method
+    parameters:
+    return value:
+*/
+    double harmonisch = HarmonischeReiheSumme1000Summanden();
+    double alternierend = AlternierendeHarmonischeReiheSumme1000Summanden();
+    double leibniz = LeibnizscheReiheSumme1000Summanden();
+    double geometrisch = GeometrischeReiheSumme1000Summanden();
+    cout << "Summe der ersten 1000 Summanden der Harmonischen Reihe:\t\t\t" << harmonisch << "\n\n";
+    cout << "Summe der ersten 1000 Summanden der Alternierenden harmonischen Reihe:\t" << alternierend<<"\n\n";
+    cout << "Summe der ersten 1000 Summanden der Leibnizschen Reihe:\t\t"<<leibniz<<"\n\n";
+    cout << "Summe der ersten 1000 Summanden der geometrischen Reihe:\t\t"<<geometrisch;
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
