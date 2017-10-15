@@ -100,9 +100,9 @@ void FlaechenberechnungDreieck(float a, float b, float c)
     }else
     {
         result = sqrt(s*(s-a)*(s-b)*(s-c)); //formel 2.1
-        cout<<"Der Flaecheninhalt nach Formel 2.1 betraegt: " <<result<<endl<<endl;
+        cout<<setprecision(10)<<"Der Flaecheninhalt nach Formel 2.1 betraegt: " <<result<<endl<<endl;
         result=(1.0/4.0)*sqrt((a+b+c)*(a+b-c)*(b+c-a)*(c+a-b)); //formel 2.2
-        cout<<"Der Flaecheninhalt nach Formel 2.2 betraegt: " <<result<<endl<<endl;
+        cout<<setprecision(10)<<"Der Flaecheninhalt nach Formel 2.2 betraegt: " <<result<<endl<<endl;
     }
 }
 
