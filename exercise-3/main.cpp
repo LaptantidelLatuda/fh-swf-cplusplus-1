@@ -21,7 +21,7 @@ int ZufallszahlNullBisFuenfzig()
 {
 /*  description:    siehe name
     parameters:     n/a
-    return value:   Zufallszahl 0-50
+    return value:   int 0-50 Zufallszahl
 */
     double zufallsZahl=0;
     zufallsZahl=rand()%51;
@@ -30,10 +30,10 @@ int ZufallszahlNullBisFuenfzig()
 
 void Aufgabe3_1()
 {
-    //Feld deklarieren
+    //Feld FÃ¼llen
     double a[100];
 
-    //Feld füllen
+    //Feld fÃ¼llen
     for(int i = 0; i<100; i++)
     {
         a[i]=ZufallszahlNullBisFuenfzig();
@@ -79,14 +79,14 @@ void Aufgabe3_1()
 void Aufgabe3_2()
 {
     //dynamisch erweiterbares Array
-    vector<double> aVector;
+    //vector<double> aVector;
 
     //File stream objekt
     ifstream Datei;
     Datei.open("C:\\Projects\\fh-swf-cplusplus-1\\exercise-3\\Verwendung von Feldern\\daten-3-2.txt");
 
     double element=0.0;
-    //erstes element ist mit 0.0 initialisiert, man muss sich allerdings von hohen werten annähern
+    //erstes element ist mit 0.0 initialisiert, man muss sich allerdings von hohen werten annÃ¤hern
     double kleinsterWert=999999999999999;
     double groessterWert=0.0;
     int zaehler=0;
@@ -103,7 +103,8 @@ void Aufgabe3_2()
         {
             groessterWert=element;
         }
-        aVector.push_back(element);
+
+        //aVector.push_back(element);
         zaehler++;
     }
     Datei.close();
@@ -126,7 +127,7 @@ void Aufgabe3_3()
     }
     cout<<"Aufgabe 3.3"<<endl<<endl<<"10 Zufallszahlen:"<<endl;
 
-    //Kongruenz Generator nach Lehmer für die ersten 10 elemente
+    //Kongruenz Generator nach Lehmer fÃ¼r die ersten 10 elemente
     for(int i =0;i<10;i++)
     {
         naechsterZufallswert=(a*aktuellerZufallsWert+b)%m;
@@ -152,7 +153,7 @@ void Aufgabe3_4()
     }
     cout<<"Aufgabe 3.4"<<endl;
 
-    //Kongruenz Generator nach Lehmer für die ersten 10 elemente
+    //Kongruenz Generator nach Lehmer fÃ¼r die ersten 10 elemente
     while(true)
     {
         naechsterZufallswert=(a*aktuellerZufallsWert+b)%m;
@@ -169,9 +170,9 @@ void Aufgabe3_4()
 
 int main()
 {
-    Aufgabe3_1();
-    Aufgabe3_2();
-    Aufgabe3_3();
-    Aufgabe3_4();
+   Aufgabe3_1();
+   //Aufgabe3_2();
+   //Aufgabe3_3();
+   //Aufgabe3_4();
     return 0;
 }

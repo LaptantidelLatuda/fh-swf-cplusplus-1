@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1509044715 source:c:\projects\fh-swf-cplusplus-1\exercise-3\verwendung von feldern\main.cpp
-	<iostream>
-	<cstdlib>
-	<fstream>
-	<vector>
-
