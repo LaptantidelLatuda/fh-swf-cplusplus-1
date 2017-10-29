@@ -30,7 +30,7 @@ int ZufallszahlNullBisFuenfzig()
 
 void Aufgabe3_1()
 {
-    //Feld Füllen
+    //Feld deklarieren
     double a[100];
 
     //Feld füllen
@@ -42,7 +42,7 @@ void Aufgabe3_1()
     int counter = 0;
     double summeAllerElemente=0.0;
 
-    //Ausgabe aller Elemente ueber 10 Reihen
+    //Ausgabe aller Elemente über 10 Reihen
     for(int i=1; i<=10;i++)
     {
         for(int j=1;j<=10;j++)
@@ -54,7 +54,7 @@ void Aufgabe3_1()
         cout<<endl;
     }
 
-    //Arithmetrisches Mittel
+    //Arithmetisches Mittel
     cout<<endl<<"Arithmetisches Mittel: "<<summeAllerElemente/counter<<endl<<endl;
 
     //Kleinstes/groesstes Element finden
@@ -83,7 +83,7 @@ void Aufgabe3_2()
 
     //File stream objekt
     ifstream Datei;
-    Datei.open("C:\\Projects\\fh-swf-cplusplus-1\\exercise-3\\Verwendung von Feldern\\daten-3-2.txt");
+    Datei.open("C:\\Projects\\fh-swf-cplusplus-1.git\\exercise-3\\daten-3-2.txt");
 
     double element=0.0;
     //erstes element ist mit 0.0 initialisiert, man muss sich allerdings von hohen werten annähern
