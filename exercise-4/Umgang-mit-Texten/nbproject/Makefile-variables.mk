@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_1-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_1-Windows
-CND_ARTIFACT_NAME_Debug=umgang_mit_texten
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/umgang_mit_texten
+CND_ARTIFACT_NAME_Debug=umgang-mit-texten
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/umgang-mit-texten
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_1-Windows/package
-CND_PACKAGE_NAME_Debug=umgangmittexten.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/umgangmittexten.tar
+CND_PACKAGE_NAME_Debug=umgang-mit-texten.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/umgang-mit-texten.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_1-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_1-Windows
-CND_ARTIFACT_NAME_Release=umgang_mit_texten
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/umgang_mit_texten
+CND_ARTIFACT_NAME_Release=umgang-mit-texten
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/umgang-mit-texten
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_1-Windows/package
-CND_PACKAGE_NAME_Release=umgangmittexten.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/umgangmittexten.tar
+CND_PACKAGE_NAME_Release=umgang-mit-texten.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/umgang-mit-texten.tar
 #
 # include compiler specific variables
 #

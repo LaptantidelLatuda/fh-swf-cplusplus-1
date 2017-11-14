@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Umgang mit Texten
+PROJECTNAME=Umgang-mit-Texten
 
 # Active Configuration
 DEFAULTCONF=Debug
