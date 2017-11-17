@@ -170,8 +170,8 @@ void Aufgabe3_4()
 
 int main()
 {
-   Aufgabe3_1();
-   //Aufgabe3_2();
+//   Aufgabe3_1();
+   Aufgabe3_2();
    //Aufgabe3_3();
    //Aufgabe3_4();
     return 0;
