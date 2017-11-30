@@ -22,8 +22,11 @@ int main()
     //ifstream Objekt erstellen
     ifstream eingabeDatei;
 
-    //ofstream Objekt erstelln
-    ofstream ausgabeDatei;
+    //ofstream Objekt erstelln algorithmischer Lösungsweg
+    ofstream ausgabeDateiLoesungsweg1;
+
+    //ofstream Objekt erstelln vorgegebener Lösungsweg
+    ofstream ausgabeDateiLoesungsweg2;
 
     //Datei öffnen
     eingabeDatei.open("klartext.txt");
@@ -36,10 +39,10 @@ int main()
     }
 
     //Datei öffnen
-    ausgabeDatei.open("geheim.txt");
+    ausgabeDateiLoesungsweg1.open("geheimLoesungsweg1.txt");
 
-    //Abfrage ob ausgabeDatei geöffnet werden konnte
-    if (!ausgabeDatei)
+    //Abfrage ob ausgabeDateien geöffnet werden können
+    if (!ausgabeDateiLoesungsweg1||!ausgabeDateiLoesungsweg2)
     {
         cerr << endl << "Error: failt to open output file! " << endl;
         exit(2);
@@ -48,6 +51,7 @@ int main()
     //Einlese-Variable
     char c;
 
+    //Lösungsweg 1 algorithmisch
     //Anweisung zum Einlesen der Datei, charweise dekodierung sowie der Speicherung
     //in einer ausgabeDatei
     while ((c = eingabeDatei.get()) != EOF)
@@ -58,24 +62,44 @@ int main()
             //Offset 'A' zu DEC 0 subtrahieren und im fotlaufenden Alphabet um 
             //13 stellen nach links schieben
             c = c - 13 - 65;
-            
+
             //Falls der dekodierte Buchstabe kleiner als 0 wird um 26 Buchstaben springen
             if (c < 0)
             {
-                c = c+26;
+                c = c + 26;
             }
-            
+
             //Offset wieder addieren um das korrekte Zeichen zu erhalten
             c = c + 65;
 
         }
         //schreiben des dekodierten Zeichens in die ausgabeDatei
-        ausgabeDatei << c;
+        ausgabeDateiLoesungsweg1 << c;
     }
-    
-    //Schließen der File Stream Objekte
     eingabeDatei.close();
-    ausgabeDatei.close();
+    
+    //Datei öffnen
+    eingabeDatei.open("klartext.txt");
+    
+    //Das zur verschlüsselung genutzte Feld
+    char rot13[] = {'N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M'};
+    
+    //Lösungsweg 2 vorgegeben
+    while ((c = eingabeDatei.get()) != EOF)
+    {
+        //falls c ein Großbuchstabe ist ROT13 dekodieren:
+        if (isupper(c))
+        {
+        c=rot13[c-'A'];    
+        }
+        //schreiben des dekodierten Zeichens in die ausgabeDatei
+        ausgabeDateiLoesungsweg2 << c;
+    }
+
+    //Schließen der File Stream Objekte
+    
+    ausgabeDateiLoesungsweg1.close();
+    ausgabeDateiLoesungsweg2.close();
     return 0;
 }
 

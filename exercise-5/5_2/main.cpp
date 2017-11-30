@@ -78,9 +78,9 @@ void feld_rechts_rotieren(char a[], unsigned int n, unsigned int shift)
         return;
     }
 
+    feld_wenden(a, n-shift);
     feld_wenden(a, n);
     feld_wenden(a, shift);
-    feld_wenden(a, n - shift);
 
     //verschiebung muss kleiner als feldlänge sein
     shift = shift % n;
