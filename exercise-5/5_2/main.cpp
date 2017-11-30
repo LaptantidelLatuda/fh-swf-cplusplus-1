@@ -15,10 +15,10 @@
 using namespace std;
 
 //Testfelder
-char a[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'Y', 'Z'};
-char feldWenden[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'Y', 'Z'};
-char feldLinksSchieben[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'Y', 'Z'};
-char feldRechtsSchieben[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'Y', 'Z'};
+char a[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G','X', 'Y', 'Z'};
+char feldWenden[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G','X', 'Y', 'Z'};
+char feldLinksSchieben[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G','X', 'Y', 'Z'};
+char feldRechtsSchieben[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G','X', 'Y', 'Z'};
 
 /* Beschreibung: wendet einen Bereich in einem Array 
  * Übergabeparameter: a: zu wendendes Feld; n: Länge des zu wendenden Bereichs 
@@ -77,14 +77,12 @@ void feld_rechts_rotieren(char a[], unsigned int n, unsigned int shift)
     {
         return;
     }
-
+    //verschiebung muss kleiner als feldlänge sein
+    shift = shift % n;
+    
     feld_wenden(a, n-shift);
     feld_wenden(a, n);
     feld_wenden(a, shift);
-
-    //verschiebung muss kleiner als feldlänge sein
-    shift = shift % n;
-
 }
 
 int main()
@@ -109,7 +107,7 @@ int main()
     }
     cout << endl;
     
-    feld_links_rotieren(feldLinksSchieben, sizeof (feldLinksSchieben), 2);
+    feld_links_rotieren(feldLinksSchieben, sizeof (feldLinksSchieben), 3);
 
     //Ausgabe
     cout << "feld_links_rotieren" << endl;
@@ -119,7 +117,7 @@ int main()
     }
     cout<<endl;
     
-    feld_rechts_rotieren(feldRechtsSchieben, sizeof(feldRechtsSchieben), 2);
+    feld_rechts_rotieren(feldRechtsSchieben, sizeof(feldRechtsSchieben), 3);
 
     //Ausgabe
     cout << "feld_rechts_rotieren" << endl;

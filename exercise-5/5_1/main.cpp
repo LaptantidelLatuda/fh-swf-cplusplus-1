@@ -25,9 +25,6 @@ int main()
     //ofstream Objekt erstelln algorithmischer Lösungsweg
     ofstream ausgabeDateiLoesungsweg1;
 
-    //ofstream Objekt erstelln vorgegebener Lösungsweg
-    ofstream ausgabeDateiLoesungsweg2;
-
     //Datei öffnen
     eingabeDatei.open("klartext.txt");
 
@@ -42,7 +39,7 @@ int main()
     ausgabeDateiLoesungsweg1.open("geheimLoesungsweg1.txt");
 
     //Abfrage ob ausgabeDateien geöffnet werden können
-    if (!ausgabeDateiLoesungsweg1||!ausgabeDateiLoesungsweg2)
+    if (!ausgabeDateiLoesungsweg1)
     {
         cerr << endl << "Error: failt to open output file! " << endl;
         exit(2);
@@ -76,29 +73,43 @@ int main()
         //schreiben des dekodierten Zeichens in die ausgabeDatei
         ausgabeDateiLoesungsweg1 << c;
     }
-    eingabeDatei.close();
     
+    //Streamsschließen
+    eingabeDatei.close();
+    ausgabeDateiLoesungsweg1.close();
+
+    //ofstream Objekt erstelln vorgegebener Lösungsweg
+    ofstream ausgabeDateiLoesungsweg2;
+    
+    //ausgabeDateiLoesungsweg2 öffnen
+    ausgabeDateiLoesungsweg2.open("geheimLoesungsweg2.txt");
+
+    //Abfragen ob ausgabeDateiLoesungsweg2 geöffnet werden konnte
+    if (!ausgabeDateiLoesungsweg1)
+    {
+        cerr << endl << "Error: failt to open output file! " << endl;
+        exit(2);
+    }
+
     //Datei öffnen
     eingabeDatei.open("klartext.txt");
-    
+
     //Das zur verschlüsselung genutzte Feld
-    char rot13[] = {'N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M'};
-    
+    char rot13[] = {'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'};
+
     //Lösungsweg 2 vorgegeben
     while ((c = eingabeDatei.get()) != EOF)
     {
         //falls c ein Großbuchstabe ist ROT13 dekodieren:
         if (isupper(c))
         {
-        c=rot13[c-'A'];    
+            c = rot13[c - 'A'];
         }
         //schreiben des dekodierten Zeichens in die ausgabeDatei
         ausgabeDateiLoesungsweg2 << c;
     }
 
-    //Schließen der File Stream Objekte
-    
-    ausgabeDateiLoesungsweg1.close();
+    //Schließen der File Stream Objekt
     ausgabeDateiLoesungsweg2.close();
     return 0;
 }
