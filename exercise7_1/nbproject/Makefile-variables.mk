@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=exercise-3
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/exercise-3
+CND_ARTIFACT_NAME_Debug=exercise7_1
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/exercise7_1
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=exercise-3.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/exercise-3.tar
+CND_PACKAGE_NAME_Debug=exercise71.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/exercise71.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=exercise-3
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/exercise-3
+CND_ARTIFACT_NAME_Release=exercise7_1
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/exercise7_1
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=exercise-3.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/exercise-3.tar
+CND_PACKAGE_NAME_Release=exercise71.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/exercise71.tar
 #
 # include compiler specific variables
 #
