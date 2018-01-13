@@ -22,12 +22,6 @@ const int N = 1000;
 //Datentyp Pixel
 typedef unsigned char Pixel;
 
-//Prototypen
-void glaetten(Pixel bild1[N][N], Pixel bild2[N][N], int nz, int ns);
-void invertieren(Pixel bild1[N][N], Pixel bild2[N][N], int nz, int ns, int graumax);
-void kantenbildung(Pixel bild1[N][N], Pixel bild2[N][N], int nz, int ns);
-void schaerfen(Pixel bild1[N][N], Pixel bild2[N][N], int nz, int ns, int graumax);
-
 /*
  * 
  */
