@@ -29,7 +29,7 @@ void set_set(SmallSet *s, uint n);
 int main(int argc, char** argv)
 {
     //Test Parameter
-    SmallSet testSet = 128;
+    SmallSet testSet = 193;
     string mengenName = "s1";
     int clearDigit = 5;
     int setDigit = 5;

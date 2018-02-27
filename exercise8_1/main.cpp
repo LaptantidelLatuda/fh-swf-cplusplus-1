@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Tobias Steppan
- * Description: Lösung zur Aufgabe: 8.1 Bildbereich füllen, Erweiterung zu Aufgabe 7_2
+ * Description: Lösung zur Aufgabe: 8.1Bildbereich füllen, Erweiterung zu Aufgabe 7_2
  * Created on 26. Januar 2018, 16:22
  */
 
@@ -299,7 +299,7 @@ void schaerfen(Pixel bild1[N][N], Pixel bild2[N][N], int nz, int ns, int graumax
     }
 }
 
-/*Beschreibung: manipuliert ein Bild dahingehend, das ein pixel mit einem neuen 
+/*Beschreibung: manipuliert ein Bild dahingehend, dass ein pixel mit einem neuen 
  * Farbbwert geimpft wird und jeder nachbar mit der selben originalfarbe diesen 
  * übernimmt
  * 
@@ -317,13 +317,13 @@ void fill(Pixel bild[N][N], int nz, int ns, int inz, int ins, Pixel oldval, Pixe
         return;
     }
     
-    if (inz-2 > 0)
+    if (inz > 0)
         fill(bild, nz, ns, inz - 1, ins, oldval, newval);
-    if (inz+2 < nz)
+    if (inz < nz-1)
         fill(bild, nz, ns, inz + 1, ins, oldval, newval);
-    if (ins-2 > 0)
+    if (ins > 0)
         fill(bild, nz, ns, inz, ins - 1, oldval, newval);
-    if (ins+2 < ns)
+    if (ins < ns-1)
         fill(bild, nz, ns, inz, ins + 1, oldval, newval);
 }
 
