@@ -1,0 +1,6 @@
+﻿  ws2015_4.cpp
+c:\projects\fh-swf-cplusplus-1\klausuren\klausuren\ws2015_4\ws2015_4.cpp(55): warning C4018: '<': signed/unsigned mismatch
+c:\projects\fh-swf-cplusplus-1\klausuren\klausuren\ws2015_4\ws2015_4.cpp(58): warning C4018: '<': signed/unsigned mismatch
+c:\projects\fh-swf-cplusplus-1\klausuren\klausuren\ws2015_4\ws2015_4.cpp(62): warning C4018: '>': signed/unsigned mismatch
+c:\projects\fh-swf-cplusplus-1\klausuren\klausuren\ws2015_4\ws2015_4.cpp(67): warning C4018: '<': signed/unsigned mismatch
+  ws2015_4.vcxproj -> C:\Projects\fh-swf-cplusplus-1\Klausuren\Klausuren\Debug\ws2015_4.exe
